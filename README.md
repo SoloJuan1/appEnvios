@@ -1,4 +1,4 @@
-                          **Laboratorio 1**
+####                        Laboratorio 1
 
                             Programacion IV
                             Juan Carlos Lagos Mayorga
