@@ -14,7 +14,7 @@ class Envios{
     }
 }
 
-class ListadoEnviosP{
+class ListadoEnvios{
     constructor(){
         this.listado={};
     }
@@ -33,7 +33,7 @@ class ListadoEnviosP{
             this._listado[envio.id]=envio;
         })
     }
-}
+
 
     crearEnvio(datos){
         const envio= new Envios(
@@ -46,7 +46,7 @@ class ListadoEnviosP{
             datos.destinatario )
         this._listado[envio.id]=envio;
     }
-
+}
 module.exports={
     ListadoEnvios
 }

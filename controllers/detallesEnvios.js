@@ -1,7 +1,11 @@
 const {request, response} = require('express')
 
-const GetDetallesEnvios = (req = request,res = response) =>
-    res.send('GET Endpoint para Detalles Envios')
+const GetDetallesEnvios = (req = request,res = response) =>{
+    let lista =new ListadoDetalleEnvios()
+    let datosJSON = leerDB('envios')
+    lista.cargarTareaFromArray(datosJSON)
+    res.json(lista.listadoArr)
+}
 
 
 const PostDetallesEnvios = (req = request,res = response) =>

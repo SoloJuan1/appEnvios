@@ -14,7 +14,7 @@ class DetallesEnvios{
     }
 }
 
-class ListadoDetalleEnviosP{
+class ListadoDetalleEnvios{
     constructor(){
         this.listado={};
     }
