@@ -1,11 +1,11 @@
-####                        Laboratorio 1
+# Laboratorio 1
+## Programacion IV 
+## Juan Carlos Lagos Mayorga
+## 21951085
 
-                            Programacion IV
-                            Juan Carlos Lagos Mayorga
-                            21951085
-Instrucciones:
+### Instrucciones:
 1. Clonar proyecto
 2. Instalar dependencias
-Npm install
+    `npm install` 
 3. Ejectutar proyeto:
-Npm start
+    `npm start`
