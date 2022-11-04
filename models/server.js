@@ -7,7 +7,11 @@ class Server{
     constructor(){ 
         this.routes();
     }
-
+/*
+./ directoria raiz
+../ retrocedemos una carpeta
+ / entrando a una carpeta
+*/
     routes(){
         this.app.use('',require('../routes/precios'))
         this.app.use('',require('../routes/paquetes'))
