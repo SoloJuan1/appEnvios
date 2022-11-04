@@ -6,9 +6,9 @@
 ### Instrucciones:
 1. Clonar proyecto
 2. Instalar dependencias
-Npm install
+    `npm install`
 3. Ejectutar proyceto:
-Npm start
+    `npm start`
 
 ### Diagrama de Clases
 

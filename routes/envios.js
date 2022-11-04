@@ -1,17 +1,11 @@
-const {Router} = require('express')
-const {
-    GetEnvios,
-    PostEnvios,
-    PutEnvios,
-    DeleteEnvios    
-} = require('../controllers/envios');
-
+const {Router} = require('express');
+const { GetEnvios,PostEnvios,PutEnvios,DeleteEnvios } = require('../controllers/envios');
+const ruta2='/envios'
 const router=Router();
 
-router.get('/',GetEnvios)
-router.post('/',PostEnvios)
-router.put('/:id',PutEnvios)
-router.delete('/:id',DeleteEnvios)
-
+router.get(ruta2,GetEnvios)
+router.post(ruta2,PostEnvios)
+router.put(ruta2,PutEnvios)
+router.delete(ruta2,DeleteEnvios)
 
 module.exports=router

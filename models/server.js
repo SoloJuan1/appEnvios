@@ -1,27 +1,25 @@
 const express = require('express')
-const cors = require('cors');
+const port = process.env.PORT
 
 class Server{
-    constructor(){
-        this.app = express()
-        this.app.use(cors())
-        this.app.use(express.json())
-        this.app.use(express.static('public'))
+    app = express()
+    port = process.env.PORT
+    constructor(){ 
         this.routes();
     }
 
     routes(){
-        this.app.use('/precios', require('../routes/precios'))
-        this.app.use('/detalleenvios', require('../routes/detalleEnvios'))
-        this.app.use('/envios', require('../routes/envios'))
-        this.app.use('/paquete', require('../routes/paquetes'))
-        this.app.use('/seguimiento', require('../routes/seguimiento'))
+        this.app.use('',require('../routes/precios'))
+        this.app.use('',require('../routes/paquetes'))
+        this.app.use('',require('../routes/envios'))
+        this.app.use('',require('../routes/detalleEnvios'))
+        this.app.use('',require('../routes/seguimiento'))
     }
 
     listen(){
         this.app.listen(process.env.PORT,() =>
-        console.log("El puerto esta corriendo el puerto TCP" + process.env.PORT))       
+        console.log(`El puerto esta corriendo el puerto TCP: ${this.port}`))       
     }
 }
 
-module.exports = Server
+module.exports = Server;
